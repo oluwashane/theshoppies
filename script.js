@@ -21,7 +21,7 @@ search.addEventListener('submit', (e) => {
 
 const returnedMovie = async (request) => {
   const apikey = "b90c7b67";
-  const response = await fetch(`http://www.omdbapi.com/?t=${request}&apikey=${apikey}`);
+  const response = await fetch(`https://www.omdbapi.com/?t=${request}&apikey=${apikey}`);
   
   if (!response.ok) {
     const errorMessage = "Server error";

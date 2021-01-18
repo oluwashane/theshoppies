@@ -1,0 +1,205 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  /* background-color: #d00000; */
+  height: 100vh;
+  overflow: auto;
+}
+
+.header  {
+  background-color: #d90429;
+  color: #000;
+  padding: 10px;
+  position: relative;
+}
+
+.header .title h1{
+  font-family: "Anton";
+  line-height: 1em;
+  font-size: 30px;
+
+}
+
+.header .title p {
+  font-family: "Dosis";
+  font-weight: 500;
+  margin-top: -10px;
+  font-size: 16px;
+}
+
+.header .lo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100px;
+  width: 70px;
+  overflow: hidden;
+}
+
+.header .lo img {
+  width: 100%;
+  height: 100px;
+}
+
+main {
+  background: #000;
+  color: #d90429;
+}
+
+.form_section {
+  padding: 10px;
+}
+
+.form_section .intro {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.form_section .intro p {
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: "Dosis";
+}
+
+/* search box */
+.form  {
+  width: 50%;
+  margin: auto;
+}
+
+#search {
+  margin: auto;
+  width: 70%;
+}
+
+#search .searchbox {
+  /* height: 40px; */
+  padding: 14px;
+  width: 70%;
+  font-size: 16px;
+  color: #d90429;
+  background: #000;
+  border: 1px solid #d90429;
+}
+
+input:focus {
+  outline: none;
+}
+
+.searchbox::placeholder {
+  color: #d90429;
+  font-family: "Dosis";
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+#search button {
+  padding: 14px;
+  background-color: #d90429;
+  color: #000;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.loader {
+  visibility: hidden;
+  /* transition: all 1000ms 500ms ease-in-out; */
+}
+
+.showloader {
+  visibility: visible;
+}
+
+/* .nomination {
+  display: none;
+}
+
+.showNomination {
+  display: block;
+  transition-property: all;
+  overflow: hidden;
+  position: relative;
+  height: 10em;
+}
+
+.list {
+  position: absolute;
+  animation: shane;
+  animation-duration: 1000ms;
+} */
+
+@keyframes shane {
+  0% {
+    top: 300px;
+  } 
+  100% {
+    top: 0px;
+  }
+}
+
+/* search result */
+.searchResult {
+  transition-property: all;
+  overflow: hidden;
+  position: relative;
+  height: 20em;
+}
+
+.searchResult .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: 0 8px;
+  animation: shane;
+  animation-direction: normal;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in;
+}
+
+.searchResult .box .image img{
+  height: 300px;
+  margin-right: 30px;
+}
+
+.searchResult .box .writeup h1{
+  font-family: "Dosis";
+  font-weight: 700;
+  margin-bottom: -10px;
+}
+
+.searchResult .box .writeup p {
+  font-family: "Dosis";
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.searchResult .box button {
+  background-color: #fff;
+  border: 1px solid #000;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Dosis";
+  padding: 10px 30px;
+}
+
+/* nomination */
+.nomination {
+  position: absolute;
+  padding: 0 15px;
+  bottom: 0;
+  right: 0;
+  background-color:rgb(233, 233, 233);
+  width: 50%;
+  border-radius: 15px 15px 0 0;
+}

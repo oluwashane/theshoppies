@@ -68,7 +68,7 @@ function displayResponse({ Title, Year, Poster, Error }) {
 function addNomination(name) {
   const store = JSON.parse(localStorage.getItem('nomination'));
   const checkStore = store !== null ? store : [];
-  const checkListForDuplicates = checkStore.includes(name) ? true : false;
+  const checkListForDuplicates = checkStore.includes(name);
   if (checkStore.length >= 5) {
     return console.log("Maximum amount of nomination reached")
   }

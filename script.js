@@ -78,5 +78,11 @@ function addNomination(name) {
   }
   
   checkStore.push(name);
-  localStorage.setItem('nomination', JSON.stringify(checkStore))
+  localStorage.setItem('nomination', JSON.stringify(checkStore));
+
+  updateNominationList()
+}
+
+function updateNominationList() {
+  console.log("update should happen now")
 }
